@@ -1,0 +1,23 @@
+<%= form_for(@question) do |f| %>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description, size: "50x15" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Update Question" %>
+  </div>
+<% end %>
+
+</br>
+
+<%= form_tag(question_path(@question), method: :delete) do %>
+  <div class="actions">
+    <%= submit_tag 'Delete Question' %>
+  </div>
+<% end %>
+
+</br>
+
+<%= link_to "back to question", question_path(@question) %>

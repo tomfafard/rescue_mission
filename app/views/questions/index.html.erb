@@ -1,0 +1,16 @@
+<h1>Questions</h1>
+<br>
+
+<h4>Questions Listed Below...</h4>
+
+<ul>
+  <% @questions.each do |q| %>
+  <li>
+    <%= link_to q.title, question_path(q)%>
+  </li>
+  </br>
+  <% end %>
+</ul>
+
+
+<%= link_to "Submit new question", new_question_path%>

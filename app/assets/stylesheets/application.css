@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ .definelength {
+   padding-left: 2em;
+   word-wrap: break-word;
+   width: 35em;
+ }
